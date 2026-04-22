@@ -50,4 +50,4 @@ end
 
 # Visualización
 plt = heatmap(fractal, axis=false, color=:turbo)
-savefig("newton_raphson_hilos.png")
+savefig("../imagenes/newton_raphson_hilos.png")
