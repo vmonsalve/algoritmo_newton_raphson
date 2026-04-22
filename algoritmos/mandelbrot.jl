@@ -25,5 +25,4 @@ for i in 1:width
 end
 
 plt = heatmap(fractal, axis=false, color=:turbo)
-savefig("mandelbrot.png")
-display(plt)
+savefig("../imagenes/mandelbrot.png")
