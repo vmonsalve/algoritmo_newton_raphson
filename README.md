@@ -1,6 +1,6 @@
 # Julia fractal lab
 
-> Exploración de fractales, usuando julia.
+> Exploración de fractales, usando Julia.
 > Dinámica compleja, caos, sistemas iterativos desde cero.
 
 ## Descripción.
@@ -17,15 +17,15 @@ Mi intención con esto es lograr comprender:
 
 ## Fractales implementados.
 
-- Nombre: Newton Raphson
-- Idea: Cada punto del plano converge a una raiz distinta.
+- Nombre: Newton-Raphson
+- Idea: Cada punto del plano converge a una raíz distinta.
 
 ```math
 z_{n+1} = z_n - \frac{f(z_n)}{f'(z_n)}
 ```
 **Resultado**
 
-![Fractal Newton Raphson](imagenes/newton_raphson.png "Fractal newton raphson")
+![Fractal Newton-Raphson](imagenes/newton_raphson.png "Fractal Newton-Raphson")
 
 ---
 
@@ -53,6 +53,18 @@ Donde:
 * ( p_n ) es el punto actual
 * ( v ) es un vértice elegido aleatoriamente
 
+### Qué está pasando
+
+Este fractal no se dibuja directamente.
+
+Surge a partir de una regla simple repetida muchas veces:
+- elegir un vértice al azar
+- moverse a la mitad de la distancia
+
+A pesar del uso de aleatoriedad, el sistema converge a una estructura determinista.
+
+Orden emergiendo del caos.
+
 **Resultado**
 
 ![Fractal triángulo Sierpinski](imagenes/sierpinski.png "Fractal triángulo Sierpinski")
@@ -79,5 +91,9 @@ Plots v1.41.6
 Para ejecutar los algoritmos debe ser de la siguiente manera.
 
 ```bash
-julia algoritmo.jl
+julia algoritmos/algoritmo.jl
 ```
+##  Insight
+
+Reglas simples + iteración → complejidad infinita.
+Los fractales no se dibujan, emergen.
