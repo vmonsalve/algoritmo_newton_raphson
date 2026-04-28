@@ -90,9 +90,11 @@ Plots v1.41.6
 
 Para ejecutar los algoritmos debe ser de la siguiente manera.
 
-```bash
-julia algoritmos/algoritmo.jl
+```text
+julia algoritmos/<nombre_del_archivo>.jl
 ```
+Reemplaza <nombre_del_archivo> por el script que quieras ejecutar.
+
 ##  Insight
 
 Reglas simples + iteración → complejidad infinita.
