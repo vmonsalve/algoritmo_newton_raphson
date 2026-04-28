@@ -17,7 +17,7 @@ Mi intención con esto es lograr comprender:
 
 ## Fractales implementados.
 
-- Nombre: Newton Rapshon
+- Nombre: Newton Raphson
 - Idea: Cada punto del plano converge a una raiz distinta.
 
 ```math
@@ -36,9 +36,28 @@ z_{n+1} = z_n - \frac{f(z_n)}{f'(z_n)}
 z_{n+1} = z_n^2 + c
 ```
 
-**Resulado**
+**Resultado**
 
 ![Fractal Mandelbrot](imagenes/mandelbrot.png "Fractal Mandelbrot")
+
+---
+
+- Nombre: Triángulo de Sierpinski
+- Idea: generar un fractal mediante iteración de puntos hacia vértices de un triángulo (Chaos Game)
+
+```math
+p_{n+1} = \frac{p_n + v}{2}
+```
+Donde:
+
+* ( p_n ) es el punto actual
+* ( v ) es un vértice elegido aleatoriamente
+
+**Resultado**
+
+![Fractal triángulo Sierpinski](imagenes/sierpinski.png "Fractal triángulo Sierpinski")
+
+
 
 ## Conceptos aplicados.
 
